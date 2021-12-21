@@ -1,1 +1,4 @@
-<img width="881" alt="image" src="https://user-images.githubusercontent.com/91136802/146901770-072080d0-75f1-46d7-85b6-85b28d8ac687.png">
+
+# description
+
+Database structure expression: the database is the root, the table is the child of the database, and the attribute is the child of the table. For example, it is known that: database ='mydatabase', tables = ['iTunes','artist'], attributes = [[ 'trackID','trackName','artistName','trackCount ', 'trckPrice','collectionPrice'],['artistName','introduce']
