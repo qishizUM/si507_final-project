@@ -24,7 +24,7 @@ Just enter the database name, the name of the table and its atributes to automat
      Mydatabase('iTunes'('trackID','trackName','artistName','trackCount),'artist'('artistName','intro1','intro2'))
   To this end, define the class Node() and the function construct_str_database(database,tables,attributes)
   (2) Use "graphviz" to display the tree structure of (1) with a block diagram.
- Function construct_str_database [link to the database structure pdf](database_structure.pdf)
+ Function construct_str_database [link to the tree structure pdf](database_structure.gv.pdf)
   (3) jason format expression. 
 Function get_structure(root) --- Convert the root of tree structure to jason format. 
 Function save_dicts(filename,dicts) ---Save the data in jason format into a file as filename [For example, Qiushi_structure.json]( Qiushi_structure.jason) 
