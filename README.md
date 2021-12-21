@@ -25,22 +25,22 @@ Just enter the database name, the name of the table and its atributes to automat
   To this end, define the class Node() and the function construct_str_database(database,tables,attributes)  
   
   (2) Use "graphviz" to display the tree structure of (1) with a block diagram.  
- Function construct_str_database [link to the data structure view](database_structure.gv.pdf)  
+  construct_str_database [link to the data structure view](database_structure.gv.pdf)  
  
   (3) jason format expression.   
-Function get_structure(root) --- Convert the root of tree structure to jason format.   
-Function save_dicts(filename,dicts) ---Save the data in jason format into a file as filename [For example, Qiushi_structure.json]( Qiushi_structure.jason)   
-Function Load_json_file(filename) ---Read the file filename, the data is in json format  
+get_structure(root) --- Convert the root of tree structure to jason format.   
+save_dicts(filename,dicts) ---Save the data in jason format into a file as filename [For example, Qiushi_structure.json]( Qiushi_structure.jason)   
+Load_json_file(filename) ---Read the file filename, the data is in json format  
 ### Second, Automatic construction of database tables
 1. The database is automatically established  
-Function create_database(root) ---automatically generates a database named root.name.   
-Function create_tables_attributes(root) ---constructs a table named root.chiledren[i].name (i=0,1,..,) and adds it to the database.   
+create_database(root) ---automatically generates a database named root.name.   
+create_tables_attributes(root) ---constructs a table named root.chiledren[i].name (i=0,1,..,) and adds it to the database.   
 Finally, add the attribute rooot.children[i].children to the i-th data table, root.children[i] is the i-th data table.
 2. Automatic data input and output  
-Function into_database(root,list_data) ---automatically adds the attribute data list_data to the root-rooted database  
-Function database_data = get_data(root) ---automatically reads out the data of the database. In the example, the attribute'trackID' of the first table "iTunes" is the primary key, and'artistName' is the foreign key of the table "artist".  
+into_database(root,list_data) ---automatically adds the attribute data list_data to the root-rooted database  
+database_data = get_data(root) ---automatically reads out the data of the database. In the example, the attribute'trackID' of the first table "iTunes" is the primary key, and'artistName' is the foreign key of the table "artist".  
 3. The input and output of Jason data  
-Function database_into_jason(root,list_data) ---converts the data list_data into json format, stores and reads the same as 1 (3), the file name is "Qiushi.jason". [link to the json file]( Qiushi_structure.jason)   
+database_into_jason(root,list_data) ---converts the data list_data into json format, stores and reads the same as 1 (3), the file name is "Qiushi.jason". [link to the json file]( Qiushi_structure.jason)   
 ### Third, Get data
 1. Call the function data1=get_iTunes_data("movie")  
 Obtained a list of attributes from the "https://itunes.apple.com/search" website, 'trackID','trackName','artistName','trackCount','trckPrice','collectionPrice'  
