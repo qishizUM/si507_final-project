@@ -13,9 +13,9 @@ My purpose of this project was to build a automatic SQL database and use auto in
 ## Processing
 Just enter the database name, the name of the table and its atributes to automatically generate the database structure, including the ability to automatically input and read attribute data
 ### First, Data structure and expression
-1. The relationship expression of database, table and attribute:
-  （1) Database structure expression: the database is the root, the table is the child of the database, and the attribute is the child of the table.
-    For example, it is known that:
+1. The relationship expression of database, table and attribute:  
+  （1) Database structure expression: the database is the root, the table is the child of the database, and the attribute is the child of the table.  
+    For example, it is known that:  
       database ='mydatabase',
       tables = ['iTunes','artist'],
       attributes = [[ 'trackID','trackName','artistName','trackCount ', 'trckPrice','collectionPrice'],['artistName','introduce']
