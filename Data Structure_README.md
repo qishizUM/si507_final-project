@@ -4,7 +4,7 @@
 Database structure expression: the database is the root, the table is the child of the database, and the attribute is the child of the table. For example, it is known that: database ='mydatabase', tables = ['iTunes','artist'], attributes = [[ 'trackID','trackName','artistName','trackCount ', 'trckPrice','collectionPrice'],['artistName','introduce']
 
 
-### First, Data structure and expression
+### data structure and expression
 1. The relationship expression of database, table and attribute:  
   （1) Database structure expression: the database is the root, the table is the child of the database, and the attribute is the child of the table.  
     For example, it is known that:  
@@ -23,7 +23,7 @@ Database structure expression: the database is the root, the table is the child 
 *get_structure(root)* --- Convert the root of tree structure to jason format.   
 *save_dicts(filename,dicts)* ---Save the data in jason format into a file as filename [For example, Qiushi_structure.json]( Qiushi_structure.jason)   
 *Load_json_file(filename)* ---Read the file filename, the data is in json format  
-### Second, Automatic construction of database tables
+### automatic construction of database tables
 1. The database is automatically established  
 *create_database(root)* ---automatically generates a database named root.name.   
 *create_tables_attributes(root)* ---constructs a table named root.chiledren[i].name (i=0,1,..,) and adds it to the database.   
